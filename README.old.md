@@ -1,1 +1,0 @@
-# meta-capstone-project

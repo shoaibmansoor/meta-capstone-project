@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant - Table Reservation System
+
+A modern, accessible, and responsive web application for the Little Lemon Mediterranean restaurant, built with React. This application allows customers to browse the menu, view testimonials, learn about the restaurant, and make table reservations online.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

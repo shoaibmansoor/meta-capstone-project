@@ -1,0 +1,137 @@
+.reservations {
+  min-height: calc(100vh - 6.25rem - 18rem);
+  background-image: url(../Home/assets/Form-background-img.jpg);
+}
+
+.reservations h2 {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  color: #495e57;
+  height: max-content;
+}
+
+.reservations form {
+  padding: 0 2rem 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(12.5rem, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.reservations form button {
+  width: max-content;
+  margin: 0 auto;
+  grid-column: 1 / span 2;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-field p {
+  font-size: 1rem;
+  color: red;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: url("/src/components/pages/Home/assets/arrowDown.svg");
+  font-weight: 600;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 0.5rem;
+  right: 0.625rem;
+  position: absolute;
+}
+
+.error{
+  color: #ff0000;
+}
+
+.reservations button:disabled,
+.reservations button[disabled] {
+  background-color: #edefee;
+  border-color: #edefee;
+  color: #adafae;
+  cursor: not-allowed;
+}
+
+.confirmed-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 0;
+  min-height: calc(100vh - 6.25rem - 18rem);
+}
+
+.confirmed-reservation h2 {
+  padding-top: 1.5rem;
+}
+
+.confirmed-reservation p {
+  padding-top: 0.25rem;
+}
+
+.reservation-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+.reservation-summary h3 {
+  margin-bottom: 1rem;
+  color: #495e57;
+}
+
+.reservation-summary dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+}
+
+.reservation-summary dt {
+  font-weight: bold;
+  color: #495e57;
+}
+
+.reservation-summary dd {
+  margin: 0;
+  color: #333;
+}
+
+.confirmation-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff4e6;
+  border-left: 4px solid #f4ce14;
+  border-radius: 0.25rem;
+}
+
+.confirmation-note a {
+  color: #495e57;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.confirmation-note a:hover {
+  color: #f4ce14;
+}
+
+@media (max-width: 491px) {
+  .reservations form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reservations form button {
+    grid-column: 1 / span 1;
+  }
+}
